@@ -9,6 +9,7 @@ from absl import flags
 4 -- use bazel to execute the generated executable --> bazel-bin/app --name=Daenerys --num=10
 
 Note -- use 'bazel-bin/app --help' for help on flags
+Note -- use 'bazel-bin/app --flagfile=flags.cfg' for inputing flags from a file
 """
 flags.DEFINE_string('name', None, 'Username')
 flags.DEFINE_integer('num', 1, 'number of times')
