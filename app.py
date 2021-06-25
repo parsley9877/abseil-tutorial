@@ -1,5 +1,6 @@
 from absl import app
 from absl import flags
+from absl import logging
 
 
 """
@@ -28,6 +29,18 @@ flags.register_validator('num', checker=num_checker, message='Number of times mu
 def main(argv):
     # delete argv if you are not going to use it, or you will get error
     del argv
+
+    # This line set the level of sensitivity to logging types
+    # logging.set_verbosity(logging.ERROR)
+    
+    # Example of logging funcs
+    logging.info('logging info1')
+    logging.info('logging info2')
+    logging.warning('logging warning')
+    logging.error('logging error')
+
+    # This will kill the process!
+    # logging.fatal('logging fatal')
 
     for i in range(0, flags.FLAGS.num):
         print(flags.FLAGS.name)
