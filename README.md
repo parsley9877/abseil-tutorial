@@ -1,1 +1,1 @@
-abseil-tutorial
+In this repository, there are some sample base codes for running absl based apps with bazel
