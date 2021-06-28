@@ -11,6 +11,7 @@ from absl import logging
 
 Note -- use 'bazel-bin/app --help' for help on flags
 Note -- use 'bazel-bin/app --flagfile=flags.cfg' for inputing flags from a file
+Note -- add another 'py_binary' rule to BUILD, in case you have another target in the directory.
 """
 flags.DEFINE_string('name', None, 'Username')
 flags.DEFINE_integer('num', 1, 'number of times')
